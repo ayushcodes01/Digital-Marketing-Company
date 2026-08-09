@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alpha Digital — Growth by Design</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  
+  
+  <a href="/" class="logo">
+        <img src="img/alpha.png" alt="Alpha Digital">
+    </a> 
+
+
+
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#results">Results</a></li>
+    <li><a href="#testimonials">Reviews</a></li>
+    <li><a href="#contact" class="nav-cta">Get Started</a></li>
+  </ul>
+  <!-- <div class="hamburger" id="ham" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div> -->
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <span class="close-btn" onclick="toggleMenu()">✕</span>
+  <a href="#services" onclick="toggleMenu()">Services</a>
+  <a href="#process" onclick="toggleMenu()">Process</a>
+  <a href="#results" onclick="toggleMenu()">Results</a>
+  <a href="#testimonials" onclick="toggleMenu()">Reviews</a>
+  <a href="#contact" onclick="toggleMenu()">Get Started</a>
+</div>
+
+
+<!-- Bot-->
+ <div class="chat-toggle" id="chatToggle">💬</div>
+
+<div class="chat-widget" id="chatWidget">
+    <div class="chat-header">
+        Company Support
+        <span class="close-chat" onclick="toggleChat()">✖</span>
+    </div>
+
+    <div class="chat-body" id="chatBox"></div>
+
+    <div class="chat-footer">
+        <input type="text" id="message" placeholder="Type message...">
+        <button onclick="sendMessage()">➤</button>
+    </div>
+</div>
+
+
+<!-- HERO -->
+<section id="hero">
+  <canvas id="grid"></canvas>
+  <div class="hero-inner">
+    <div class="eyebrow"><span class="eyebrow-dot"></span>India's Fastest Growing Agency</div>
+    <h1>
+      We Turn Clicks Into<br>
+      <span class="blue">Revenue</span> &amp; Brands Into<br>
+      <span class="cyan">Legends</span>
+    </h1>
+    <p class="hero-sub">Alpha Digital is a full-spectrum digital marketing agency delivering data-driven strategies that grow your audience, amplify your brand, and generate real, measurable results.</p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn-primary">Start Your Growth →</a>
+      <a href="#services" class="btn-outline">Explore Services</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hstat"><div class="hstat-num">111<span>+</span></div><div class="hstat-label">Clients Served</div></div>
+      <div class="hstat"><div class="hstat-num">3<span>yrs</span></div><div class="hstat-label">Industry Experience</div></div>
+      <div class="hstat"><div class="hstat-num">12<span>x</span></div><div class="hstat-label">Average ROI Delivered</div></div>
+      <div class="hstat"><div class="hstat-num">97<span>%</span></div><div class="hstat-label">Client Retention Rate</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CLIENTS -->
+<div id="clients">
+  <div class="clients-label">Trusted by leading brands</div>
+  <div class="clients-track" id="track">
+    <span class="client-name">TATA</span>
+    <span class="client-name">SkyBridge</span>
+    <span class="client-name">Luminary Co.</span>
+    <span class="client-name">BEETEL</span>
+    <span class="client-name">PrimePath</span>
+    <span class="client-name">EchoMedia</span>
+    <span class="client-name">CoreVision</span>
+    <span class="client-name">BlueWave</span>
+    <span class="client-name">NovaTech</span>
+    <span class="client-name">SkyBridge</span>
+    <span class="client-name">Luminary Co.</span>
+    <span class="client-name">ZenithGroup</span>
+    <span class="client-name">PrimePath</span>
+    <span class="client-name">EchoMedia</span>
+    <span class="client-name">CoreVision</span>
+    <span class="client-name">BlueWave</span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services" class="fade-in">
+  <div class="services-head">
+    <div>
+      <div class="section-label">What We Do</div>
+      <h2 class="section-title">End-to-End Digital<br>Marketing Services</h2>
+    </div>
+    <p class="section-sub">From strategy to execution — every service is engineered to move the needle on what matters most to your business.</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-icon ic-blue">🎯</div>
+      <div class="service-title">Performance Marketing</div>
+      <p class="service-desc">Precision-targeted paid campaigns across Google, Meta, and programmatic platforms optimised for maximum ROI.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon ic-cyan">🔍</div>
+      <div class="service-title">SEO & Content Strategy</div>
+      <p class="service-desc">Dominate search rankings with technical SEO, authoritative content, and link-building that drives compounding organic growth.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon ic-purple">📱</div>
+      <div class="service-title">Social Media Marketing</div>
+      <p class="service-desc">Build a loyal community and drive conversions through culturally resonant content and smart social advertising.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon ic-green">📧</div>
+      <div class="service-title">Email & CRM Automation</div>
+      <p class="service-desc">Lifecycle campaigns and personalised email flows that nurture leads and turn one-time buyers into lifetime customers.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon ic-orange">🌐</div>
+      <div class="service-title">Web Design & Development</div>
+      <p class="service-desc">Conversion-focused websites and landing pages that look stunning and are engineered to turn visitors into buyers.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon ic-pink">📊</div>
+      <div class="service-title">Analytics & Data Insights</div>
+      <p class="service-desc">Dashboards, attribution models, and actionable insights so every decision you make is backed by data, not guesswork.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon ic-pink">🎨</div>
+      <div class="service-title">Creative Services</div>
+      <p class="service-desc">Creative designs, engaging visuals, and compelling branding that capture attention, build trust, and drive customer engagement.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon ic-pink">🤖</div>
+      <div class="service-title">AI Marketing Automation</div>
+      <p class="service-desc">Automate customer interactions, lead nurturing, and marketing workflows using AI-driven tools and intelligent automation.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process" class="fade-in">
+  <div class="section-label">How We Work</div>
+  <h2 class="section-title">A Process Built for<br>Predictable Growth</h2>
+  <br>
+  <div class="process-grid">
+    <div class="process-steps">
+      <div class="step active" onclick="activateStep(this)">
+        <div class="step-num">01</div>
+        <div class="step-content">
+          <h3>Discovery & Audit</h3>
+          <p>We dive deep into your business, audience, and competitive landscape to uncover your real growth levers.</p>
+        </div>
+      </div>
+      <div class="step" onclick="activateStep(this)">
+        <div class="step-num">02</div>
+        <div class="step-content">
+          <h3>Strategy Blueprint</h3>
+          <p>A bespoke, channel-agnostic growth plan with clear KPIs, budget allocation, and a 90-day roadmap.</p>
+        </div>
+      </div>
+      <div class="step" onclick="activateStep(this)">
+        <div class="step-num">03</div>
+        <div class="step-content">
+          <h3>Creative Execution</h3>
+          <p>Our in-house team crafts compelling content, ads, and experiences that captivate your target audience.</p>
+        </div>
+      </div>
+      <div class="step" onclick="activateStep(this)">
+        <div class="step-num">04</div>
+        <div class="step-content">
+          <h3>Launch & Optimise</h3>
+          <p>Campaigns go live with continuous A/B testing and real-time optimisation to squeeze every drop of performance.</p>
+        </div>
+      </div>
+      <div class="step" onclick="activateStep(this)">
+        <div class="step-num">05</div>
+        <div class="step-content">
+          <h3>Report & Scale</h3>
+          <p>Transparent weekly reports and monthly strategy calls to double down on what's working and scale your results.</p>
+        </div>
+      </div>
+    </div>
+    <div class="process-visual">
+      <div class="process-circle">
+        <svg viewBox="0 0 280 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="140" cy="140" r="130" stroke="url(#grad1)" stroke-width="1.5" stroke-dasharray="8 6"/>
+          <circle cx="140" cy="140" r="100" stroke="rgba(37,99,235,.2)" stroke-width="1"/>
+          <circle cx="10" cy="140" r="5" fill="#06B6D4"/>
+          <circle cx="270" cy="140" r="5" fill="#2563EB"/>
+          <circle cx="140" cy="10" r="5" fill="#06B6D4"/>
+          <circle cx="140" cy="270" r="5" fill="#2563EB"/>
+          <defs>
+            <linearGradient id="grad1" x1="0" y1="0" x2="280" y2="280" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#2563EB"/>
+              <stop offset="1" stop-color="#06B6D4"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <div class="process-circle-inner">Alpha<br>Growth<br>Engine™</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section id="results" class="fade-in">
+  <div class="section-label">Proven Impact</div>
+  <h2 class="section-title">Numbers That Speak<br>Louder Than Words</h2>
+  <div class="results-grid">
+    <div class="result-card"><div class="result-num">₹21Cr+</div><div class="result-label">Revenue generated for clients in the last 12 months</div></div>
+    <div class="result-card"><div class="result-num">320%</div><div class="result-label">Average increase in qualified leads within 90 days</div></div>
+    <div class="result-card"><div class="result-num">4.2s</div><div class="result-label">Average page load speed achieved post-optimisation</div></div>
+    <div class="result-card"><div class="result-num">67%</div><div class="result-label">Average reduction in cost-per-acquisition for ad clients</div></div>
+    <div class="result-card"><div class="result-num">1.8M+</div><div class="result-label">Social media impressions delivered monthly</div></div>
+    <div class="result-card"><div class="result-num">2.4x</div><div class="result-label">Average email open rate vs industry benchmark</div></div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="fade-in">
+  <div class="section-label">Client Reviews</div>
+  <h2 class="section-title">Our Clients Love<br>What We Build Together</h2>
+  <div class="testi-grid">
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">"Alpha Digital transformed our online presence completely. Within 4 months, our organic traffic tripled and we were ranking on page one for 15 competitive keywords."</p>
+      <div class="testi-author">
+        <div class="testi-avatar av1">RK</div>
+        <div><div class="testi-name">Rajesh Kumar</div><div class="testi-role">CEO, NovaTech Solutions</div></div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">"The team at Alpha Digital genuinely cares about results. Our ROAS on Meta went from 1.8x to 6.4x in just two months. Absolutely phenomenal work."</p>
+      <div class="testi-author">
+        <div class="testi-avatar av2">PS</div>
+        <div><div class="testi-name">Priya Sharma</div><div class="testi-role">Founder, Luminary Co.</div></div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">"Switching to Alpha Digital was the best business decision we made this year. Their data-driven approach gave us clarity we never had before, and the growth followed."</p>
+      <div class="testi-author">
+        <div class="testi-avatar av3">AM</div>
+        <div><div class="testi-name">Arjun Mehta</div><div class="testi-role">Director, ZenithGroup</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<div id="cta-band" class="fade-in">
+  <h2>Ready to Grow with Alpha Digital?</h2>
+  <p>Book a free 30-minute strategy session and discover exactly how we'd grow your business.</p>
+  <a href="#contact" class="btn-primary">Book Free Strategy Call →</a>
+</div>
+
+<!-- CONTACT -->
+<section id="contact" class="fade-in">
+  <div class="contact-wrap">
+    <div class="contact-info">
+      <div class="section-label">Contact Us</div>
+      <h2 class="section-title">Let's Start a<br>Conversation</h2>
+      <p>Tell us about your brand and goals. We'll be back within 24 hours with a plan tailored specifically to your growth objectives.</p>
+      <div class="contact-detail"><div class="cd-icon">📍</div><div class="cd-text"> Patna Bihar 800001</div></div>
+      <div class="contact-detail"><div class="cd-icon">📞</div><div class="cd-text">+91 1234567890</div></div>
+      <div class="contact-detail"><div class="cd-icon">✉️</div><div class="cd-text">hello@alphadigital.in</div></div>
+    </div>
+    <div>
+      <div class="contact-form" id="contactForm">
+        <div class="form-row">
+          <div class="form-group"><label>First Name</label><input type="text" placeholder="Aaush" /></div>
+          <div class="form-group"><label>Last Name</label><input type="text" placeholder="Chauhan" /></div>
+        </div>
+        <div class="form-group"><label>Email Address</label><input type="email" placeholder="ayush@8520.com" /></div>
+        <div class="form-group"><label>Phone Number</label><input type="tel" placeholder="+91 0987654321" /></div>
+        <div class="form-group">
+          <label>Service You're Interested In</label>
+          <select>
+            <option value="">Select a service</option>
+            <option>Performance Marketing</option>
+            <option>SEO & Content Strategy</option>
+            <option>Social Media Marketing</option>
+            <option>Email & CRM Automation</option>
+            <option>Web Design & Development</option>
+            <option>Analytics & Data Insights</option>
+            <option>Full Growth Package</option>
+          </select>
+        </div>
+        <div class="form-group"><label>Tell Us About Your Business</label><textarea placeholder="Brief description of your business and goals..."></textarea></div>
+        <button class="btn-submit" onclick="submitForm()">Send Message →</button>
+      </div>
+      <div class="form-success" id="formSuccess">
+        <div style="font-size:2.5rem;margin-bottom:1rem">✅</div>
+        <h3 style="font-family:'Space Grotesk',sans-serif;margin-bottom:.5rem">Message Sent!</h3>
+        <p style="color:#64748B">We'll be in touch within 24 hours with a tailored growth plan.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a class="logo" href="#hero" style="display:inline-block;margin-bottom:.5rem;color:#1E293B">Alpha <span>Digital</span></a>
+      <p>A full-spectrum digital marketing agency helping ambitious brands grow faster, smarter, and more profitably in the digital world.</p>
+      <div class="socials">
+        <a class="social-btn" href="#" title="LinkedIn">in</a>
+        <a class="social-btn" href="#" title="Twitter">𝕏</a>
+        <a class="social-btn" href="#" title="Instagram">◈</a>
+        <a class="social-btn" href="#" title="YouTube">▶</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="#services">Performance Marketing</a></li>
+        <li><a href="#services">SEO & Content</a></li>
+        <li><a href="#services">Social Media</a></li>
+        <li><a href="#services">Email Automation</a></li>
+        <li><a href="#services">Web Development</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Case Studies</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Cookie Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Alpha Digital. All rights reserved.</span>
+    <span>Designed with ❤️ :) </span>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+
+  
+</script>
+</body>
+</html>
